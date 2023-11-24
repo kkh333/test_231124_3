@@ -1,0 +1,8 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content">
+    <h1 th:text="${article.subject}"></h1>
+    <h1 th:text="${article.content}"></h1>
+    <h1 th:text="${article.createDate}"></h1>
+    <a th:href="@{/article/list}">목록</a>
+</div>
+</html>
